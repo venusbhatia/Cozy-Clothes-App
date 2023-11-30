@@ -4,7 +4,7 @@
 ✨ Cozy Clothes App ✨
 
 </h1>
-Made using SwiftUI framework, and have used Firebase Analytics
+Made using SwiftUI framework, Powered by Firebase
 
 ![IMG_0942](https://github.com/venusbhatia/Cozy-Clothes-App/assets/81386356/1e65b8c2-4047-48d8-967a-605be460a3fc)
 ![IMG_0945](https://github.com/venusbhatia/Cozy-Clothes-App/assets/81386356/0b37119e-b458-4e06-9cc0-8c70da65e5aa)
