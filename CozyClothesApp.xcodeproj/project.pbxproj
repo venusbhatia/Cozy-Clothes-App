@@ -1,0 +1,826 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22D18FCF27751630007E2D01 /* CozyClothesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D18FCE27751630007E2D01 /* CozyClothesApp.swift */; };
+		22D18FD127751630007E2D01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D18FD027751630007E2D01 /* ContentView.swift */; };
+		22D18FD327751632007E2D01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22D18FD227751632007E2D01 /* Assets.xcassets */; };
+		22D18FDD27751640007E2D01 /* PaymentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D18FDC27751640007E2D01 /* PaymentButton.swift */; };
+		22D18FE027751BFF007E2D01 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D18FDF27751BFF007E2D01 /* ProductCard.swift */; };
+		22D18FE327751C25007E2D01 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D18FE227751C25007E2D01 /* Product.swift */; };
+		22FF1287278357E700E995FC /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FF1286278357E700E995FC /* CartView.swift */; };
+		22FF128927835C2100E995FC /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FF128827835C2100E995FC /* CartManager.swift */; };
+		22FF128B27835C9100E995FC /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FF128A27835C9100E995FC /* CartButton.swift */; };
+		22FF128D2783602400E995FC /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FF128C2783602400E995FC /* ProductRow.swift */; };
+		22FF1290278386F900E995FC /* PaymentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FF128F278386F900E995FC /* PaymentHandler.swift */; };
+		845D0F722A7BB25C00B75FBE /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 845D0F712A7BB25C00B75FBE /* FirebasePerformance */; };
+		845D0F752A7BCFCC00B75FBE /* GeoFire in Frameworks */ = {isa = PBXBuildFile; productRef = 845D0F742A7BCFCC00B75FBE /* GeoFire */; };
+		845D0F772A7BCFCC00B75FBE /* GeoFireUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 845D0F762A7BCFCC00B75FBE /* GeoFireUtils */; };
+		845D0F792A7BD0D700B75FBE /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 845D0F782A7BD0D700B75FBE /* FirebaseDatabase */; };
+		845D0F7B2A7BD0D700B75FBE /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 845D0F7A2A7BD0D700B75FBE /* FirebaseDatabaseSwift */; };
+		84757FB12A8E312400FFACC4 /* FacebookAEM in Frameworks */ = {isa = PBXBuildFile; productRef = 84757FB02A8E312400FFACC4 /* FacebookAEM */; };
+		84757FB32A8E312400FFACC4 /* FacebookBasics in Frameworks */ = {isa = PBXBuildFile; productRef = 84757FB22A8E312400FFACC4 /* FacebookBasics */; };
+		84757FB52A8E312400FFACC4 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 84757FB42A8E312400FFACC4 /* FacebookCore */; };
+		84757FB72A8E312400FFACC4 /* FacebookGamingServices in Frameworks */ = {isa = PBXBuildFile; productRef = 84757FB62A8E312400FFACC4 /* FacebookGamingServices */; };
+		84757FB92A8E312400FFACC4 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 84757FB82A8E312400FFACC4 /* FacebookLogin */; };
+		84757FBB2A8E312400FFACC4 /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 84757FBA2A8E312400FFACC4 /* FacebookShare */; };
+		E21347EF29E4324000E38F08 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = E21347EE29E4324000E38F08 /* FirebaseRemoteConfig */; };
+		E21347F129E4324000E38F08 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E21347F029E4324000E38F08 /* FirebaseRemoteConfigSwift */; };
+		E21347F329E5426000E38F08 /* for remoteconfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21347F229E5426000E38F08 /* for remoteconfig.swift */; };
+		E21347F529E7DAAE00E38F08 /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = E21347F429E7DAAE00E38F08 /* remote_config_defaults.plist */; };
+		E21347F729E8100300E38F08 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21347F629E8100300E38F08 /* WebView.swift */; };
+		E225406329C9E4E5006E0B52 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E225406229C9E4E5006E0B52 /* FirebaseAnalytics */; };
+		E225406729C9E4E5006E0B52 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E225406629C9E4E5006E0B52 /* FirebaseAnalyticsSwift */; };
+		E225406F29C9E4E5006E0B52 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E225406E29C9E4E5006E0B52 /* FirebaseAuth */; };
+		E26D7A2A29D70233004C9FA5 /* GoogleTagManager in Frameworks */ = {isa = PBXBuildFile; productRef = E26D7A2929D70233004C9FA5 /* GoogleTagManager */; };
+		E26D7A2D29D70AF5004C9FA5 /* GTM-WXFMVDR.json in Resources */ = {isa = PBXBuildFile; fileRef = E26D7A2C29D70AF5004C9FA5 /* GTM-WXFMVDR.json */; };
+		E2797E0C2A29C5AC00DBCDF7 /* Mixpanel in Frameworks */ = {isa = PBXBuildFile; productRef = E2797E0B2A29C5AC00DBCDF7 /* Mixpanel */; };
+		E2797E0F2A29E05800DBCDF7 /* SmartlookAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E2797E0E2A29E05800DBCDF7 /* SmartlookAnalytics */; };
+		E28BEBDD29DC4E82002EF886 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E28BEBDC29DC4E82002EF886 /* GoogleService-Info.plist */; };
+		E29F0C4229C8679300FF16A4 /* PagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F0C4129C8679300FF16A4 /* PagingView.swift */; };
+		E29F0C4529C8680300FF16A4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F0C4429C8680300FF16A4 /* Constants.swift */; };
+		E29F0C4829C885A400FF16A4 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F0C4729C885A400FF16A4 /* TabBarView.swift */; };
+		E29F0C4D29C8862B00FF16A4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F0C4C29C8862B00FF16A4 /* ProfileView.swift */; };
+		E29F0C4F29C8867500FF16A4 /* Shopping.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F0C4E29C8867500FF16A4 /* Shopping.swift */; };
+		E29F0C5129C886A900FF16A4 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F0C5029C886A900FF16A4 /* FavoriteView.swift */; };
+		E29F0C5B29C8889700FF16A4 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F0C5329C8889700FF16A4 /* ProfileModel.swift */; };
+		E29F0C5F29C8889700FF16A4 /* TabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F0C5729C8889700FF16A4 /* TabBarModel.swift */; };
+		E29F0C6129C8889700FF16A4 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F0C5929C8889700FF16A4 /* CategoryModel.swift */; };
+		E29F0C6629C88C0400FF16A4 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F0C6229C88C0300FF16A4 /* UIColor+Extension.swift */; };
+		E29F0C6729C88C0400FF16A4 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F0C6329C88C0300FF16A4 /* Color+Extension.swift */; };
+		E29F0C6829C88C0400FF16A4 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F0C6429C88C0300FF16A4 /* Array+Extension.swift */; };
+		E29F0C6929C88C0400FF16A4 /* CustomCornerRadious.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F0C6529C88C0300FF16A4 /* CustomCornerRadious.swift */; };
+		E29F0C6B29C9875500FF16A4 /* PaymentSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F0C6A29C9875500FF16A4 /* PaymentSuccess.swift */; };
+		E29F0C6E29C98B7C00FF16A4 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E29F0C6D29C98B7C00FF16A4 /* ConfettiSwiftUI */; };
+		E2A7C8AD29CAEC9600A2BF87 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A7C8AB29CAEC9300A2BF87 /* AdSupport.framework */; };
+		E2A7C8B529D1A75200A2BF87 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = E2A7C8B429D1A75200A2BF87 /* AlertToast */; };
+		E2B60FB529DC05F300430540 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = E2B60FB429DC05F300430540 /* FirebaseInAppMessaging-Beta */; };
+		E2B60FB729DC05F300430540 /* FirebaseInAppMessagingSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = E2B60FB629DC05F300430540 /* FirebaseInAppMessagingSwift-Beta */; };
+		E2B60FB929DC05F300430540 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = E2B60FB829DC05F300430540 /* FirebaseMessaging */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		22D18FCB27751630007E2D01 /* CozyClothesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CozyClothesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D18FCE27751630007E2D01 /* CozyClothesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CozyClothesApp.swift; sourceTree = "<group>"; };
+		22D18FD027751630007E2D01 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		22D18FD227751632007E2D01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22D18FDC27751640007E2D01 /* PaymentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentButton.swift; sourceTree = "<group>"; };
+		22D18FDF27751BFF007E2D01 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
+		22D18FE227751C25007E2D01 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		22FF1286278357E700E995FC /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		22FF128827835C2100E995FC /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		22FF128A27835C9100E995FC /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
+		22FF128C2783602400E995FC /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
+		22FF128F278386F900E995FC /* PaymentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHandler.swift; sourceTree = "<group>"; };
+		E21347F229E5426000E38F08 /* for remoteconfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "for remoteconfig.swift"; sourceTree = "<group>"; };
+		E21347F429E7DAAE00E38F08 /* remote_config_defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = remote_config_defaults.plist; sourceTree = "<group>"; };
+		E21347F629E8100300E38F08 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		E26D7A2C29D70AF5004C9FA5 /* GTM-WXFMVDR.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "GTM-WXFMVDR.json"; sourceTree = "<group>"; };
+		E28BEBDC29DC4E82002EF886 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E29F0C4129C8679300FF16A4 /* PagingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingView.swift; sourceTree = "<group>"; };
+		E29F0C4429C8680300FF16A4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E29F0C4729C885A400FF16A4 /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		E29F0C4C29C8862B00FF16A4 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E29F0C4E29C8867500FF16A4 /* Shopping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shopping.swift; sourceTree = "<group>"; };
+		E29F0C5029C886A900FF16A4 /* FavoriteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		E29F0C5329C8889700FF16A4 /* ProfileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		E29F0C5729C8889700FF16A4 /* TabBarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarModel.swift; sourceTree = "<group>"; };
+		E29F0C5929C8889700FF16A4 /* CategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		E29F0C6229C88C0300FF16A4 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		E29F0C6329C88C0300FF16A4 /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		E29F0C6429C88C0300FF16A4 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		E29F0C6529C88C0300FF16A4 /* CustomCornerRadious.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCornerRadious.swift; sourceTree = "<group>"; };
+		E29F0C6A29C9875500FF16A4 /* PaymentSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSuccess.swift; sourceTree = "<group>"; };
+		E2A7C8AB29CAEC9300A2BF87 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22D18FC827751630007E2D01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84757FB32A8E312400FFACC4 /* FacebookBasics in Frameworks */,
+				E21347EF29E4324000E38F08 /* FirebaseRemoteConfig in Frameworks */,
+				E225406729C9E4E5006E0B52 /* FirebaseAnalyticsSwift in Frameworks */,
+				845D0F722A7BB25C00B75FBE /* FirebasePerformance in Frameworks */,
+				84757FB72A8E312400FFACC4 /* FacebookGamingServices in Frameworks */,
+				E2A7C8AD29CAEC9600A2BF87 /* AdSupport.framework in Frameworks */,
+				E2B60FB729DC05F300430540 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
+				E2B60FB529DC05F300430540 /* FirebaseInAppMessaging-Beta in Frameworks */,
+				84757FBB2A8E312400FFACC4 /* FacebookShare in Frameworks */,
+				84757FB92A8E312400FFACC4 /* FacebookLogin in Frameworks */,
+				845D0F792A7BD0D700B75FBE /* FirebaseDatabase in Frameworks */,
+				845D0F772A7BCFCC00B75FBE /* GeoFireUtils in Frameworks */,
+				E225406329C9E4E5006E0B52 /* FirebaseAnalytics in Frameworks */,
+				E2A7C8B529D1A75200A2BF87 /* AlertToast in Frameworks */,
+				845D0F752A7BCFCC00B75FBE /* GeoFire in Frameworks */,
+				E26D7A2A29D70233004C9FA5 /* GoogleTagManager in Frameworks */,
+				E2797E0F2A29E05800DBCDF7 /* SmartlookAnalytics in Frameworks */,
+				845D0F7B2A7BD0D700B75FBE /* FirebaseDatabaseSwift in Frameworks */,
+				84757FB52A8E312400FFACC4 /* FacebookCore in Frameworks */,
+				E29F0C6E29C98B7C00FF16A4 /* ConfettiSwiftUI in Frameworks */,
+				E2797E0C2A29C5AC00DBCDF7 /* Mixpanel in Frameworks */,
+				84757FB12A8E312400FFACC4 /* FacebookAEM in Frameworks */,
+				E21347F129E4324000E38F08 /* FirebaseRemoteConfigSwift in Frameworks */,
+				E225406F29C9E4E5006E0B52 /* FirebaseAuth in Frameworks */,
+				E2B60FB929DC05F300430540 /* FirebaseMessaging in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22D18FC227751630007E2D01 = {
+			isa = PBXGroup;
+			children = (
+				E26D7A2B29D70ABF004C9FA5 /* container */,
+				22D18FCD27751630007E2D01 /* CozyClothesApp */,
+				22D18FCC27751630007E2D01 /* Products */,
+				E29F0C4A29C8861600FF16A4 /* Favourite */,
+				E225406129C9E4D7006E0B52 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		22D18FCC27751630007E2D01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22D18FCB27751630007E2D01 /* CozyClothesApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22D18FCD27751630007E2D01 /* CozyClothesApp */ = {
+			isa = PBXGroup;
+			children = (
+				22D18FCE27751630007E2D01 /* CozyClothesApp.swift */,
+				22D18FD227751632007E2D01 /* Assets.xcassets */,
+				E21347F429E7DAAE00E38F08 /* remote_config_defaults.plist */,
+				E28BEBDC29DC4E82002EF886 /* GoogleService-Info.plist */,
+				22FF128827835C2100E995FC /* CartManager.swift */,
+				22FF128F278386F900E995FC /* PaymentHandler.swift */,
+				22D18FE4277522FC007E2D01 /* Views */,
+				22D18FDE27751BF5007E2D01 /* Components */,
+				E29F0C4029C8678000FF16A4 /* PagingView */,
+				22D18FE127751C1D007E2D01 /* Models */,
+				E29F0C4329C867EC00FF16A4 /* Extension */,
+				E21347F229E5426000E38F08 /* for remoteconfig.swift */,
+			);
+			path = CozyClothesApp;
+			sourceTree = "<group>";
+		};
+		22D18FDE27751BF5007E2D01 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				22D18FDF27751BFF007E2D01 /* ProductCard.swift */,
+				22FF128A27835C9100E995FC /* CartButton.swift */,
+				22FF128C2783602400E995FC /* ProductRow.swift */,
+				22D18FDC27751640007E2D01 /* PaymentButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		22D18FE127751C1D007E2D01 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E29F0C5929C8889700FF16A4 /* CategoryModel.swift */,
+				E29F0C5329C8889700FF16A4 /* ProfileModel.swift */,
+				E29F0C5729C8889700FF16A4 /* TabBarModel.swift */,
+				22D18FE227751C25007E2D01 /* Product.swift */,
+				E29F0C6A29C9875500FF16A4 /* PaymentSuccess.swift */,
+				E29F0C4C29C8862B00FF16A4 /* ProfileView.swift */,
+				E21347F629E8100300E38F08 /* WebView.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		22D18FE4277522FC007E2D01 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E29F0C4B29C8861A00FF16A4 /* Category Page */,
+				E29F0C4629C8859800FF16A4 /* TabBar */,
+				22D18FD027751630007E2D01 /* ContentView.swift */,
+				22FF1286278357E700E995FC /* CartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E225406129C9E4D7006E0B52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2A7C8AB29CAEC9300A2BF87 /* AdSupport.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E26D7A2B29D70ABF004C9FA5 /* container */ = {
+			isa = PBXGroup;
+			children = (
+				E26D7A2C29D70AF5004C9FA5 /* GTM-WXFMVDR.json */,
+			);
+			path = container;
+			sourceTree = "<group>";
+		};
+		E29F0C4029C8678000FF16A4 /* PagingView */ = {
+			isa = PBXGroup;
+			children = (
+				E29F0C4129C8679300FF16A4 /* PagingView.swift */,
+			);
+			path = PagingView;
+			sourceTree = "<group>";
+		};
+		E29F0C4329C867EC00FF16A4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E29F0C6429C88C0300FF16A4 /* Array+Extension.swift */,
+				E29F0C6329C88C0300FF16A4 /* Color+Extension.swift */,
+				E29F0C6529C88C0300FF16A4 /* CustomCornerRadious.swift */,
+				E29F0C6229C88C0300FF16A4 /* UIColor+Extension.swift */,
+				E29F0C4429C8680300FF16A4 /* Constants.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E29F0C4629C8859800FF16A4 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E29F0C4729C885A400FF16A4 /* TabBarView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		E29F0C4A29C8861600FF16A4 /* Favourite */ = {
+			isa = PBXGroup;
+			children = (
+				E29F0C5029C886A900FF16A4 /* FavoriteView.swift */,
+			);
+			path = Favourite;
+			sourceTree = "<group>";
+		};
+		E29F0C4B29C8861A00FF16A4 /* Category Page */ = {
+			isa = PBXGroup;
+			children = (
+				E29F0C4E29C8867500FF16A4 /* Shopping.swift */,
+			);
+			path = "Category Page";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22D18FCA27751630007E2D01 /* CozyClothesApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22D18FD927751632007E2D01 /* Build configuration list for PBXNativeTarget "CozyClothesApp" */;
+			buildPhases = (
+				22D18FC727751630007E2D01 /* Sources */,
+				22D18FC827751630007E2D01 /* Frameworks */,
+				22D18FC927751630007E2D01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CozyClothesApp;
+			packageProductDependencies = (
+				E29F0C6D29C98B7C00FF16A4 /* ConfettiSwiftUI */,
+				E225406229C9E4E5006E0B52 /* FirebaseAnalytics */,
+				E225406629C9E4E5006E0B52 /* FirebaseAnalyticsSwift */,
+				E225406E29C9E4E5006E0B52 /* FirebaseAuth */,
+				E2A7C8B429D1A75200A2BF87 /* AlertToast */,
+				E26D7A2929D70233004C9FA5 /* GoogleTagManager */,
+				E2B60FB429DC05F300430540 /* FirebaseInAppMessaging-Beta */,
+				E2B60FB629DC05F300430540 /* FirebaseInAppMessagingSwift-Beta */,
+				E2B60FB829DC05F300430540 /* FirebaseMessaging */,
+				E21347EE29E4324000E38F08 /* FirebaseRemoteConfig */,
+				E21347F029E4324000E38F08 /* FirebaseRemoteConfigSwift */,
+				E2797E0B2A29C5AC00DBCDF7 /* Mixpanel */,
+				E2797E0E2A29E05800DBCDF7 /* SmartlookAnalytics */,
+				845D0F712A7BB25C00B75FBE /* FirebasePerformance */,
+				845D0F742A7BCFCC00B75FBE /* GeoFire */,
+				845D0F762A7BCFCC00B75FBE /* GeoFireUtils */,
+				845D0F782A7BD0D700B75FBE /* FirebaseDatabase */,
+				845D0F7A2A7BD0D700B75FBE /* FirebaseDatabaseSwift */,
+				84757FB02A8E312400FFACC4 /* FacebookAEM */,
+				84757FB22A8E312400FFACC4 /* FacebookBasics */,
+				84757FB42A8E312400FFACC4 /* FacebookCore */,
+				84757FB62A8E312400FFACC4 /* FacebookGamingServices */,
+				84757FB82A8E312400FFACC4 /* FacebookLogin */,
+				84757FBA2A8E312400FFACC4 /* FacebookShare */,
+			);
+			productName = SweaterShopApp;
+			productReference = 22D18FCB27751630007E2D01 /* CozyClothesApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22D18FC327751630007E2D01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					22D18FCA27751630007E2D01 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 22D18FC627751630007E2D01 /* Build configuration list for PBXProject "CozyClothesApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22D18FC227751630007E2D01;
+			packageReferences = (
+				E29F0C6C29C98B7C00FF16A4 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+				E225406029C9E0B3006E0B52 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				E2A7C8B329D1A75200A2BF87 /* XCRemoteSwiftPackageReference "AlertToast" */,
+				E2A7C8B629D1B02700A2BF87 /* XCRemoteSwiftPackageReference "ToastUI" */,
+				E26D7A2829D70233004C9FA5 /* XCRemoteSwiftPackageReference "google-tag-manager-ios-sdk" */,
+				E2797E0A2A29C5AC00DBCDF7 /* XCRemoteSwiftPackageReference "mixpanel-swift" */,
+				E2797E0D2A29E05800DBCDF7 /* XCRemoteSwiftPackageReference "analytics-swift-package" */,
+				845D0F732A7BCFCC00B75FBE /* XCRemoteSwiftPackageReference "geofire-objc" */,
+				84757FAF2A8E312400FFACC4 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+			);
+			productRefGroup = 22D18FCC27751630007E2D01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22D18FCA27751630007E2D01 /* CozyClothesApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22D18FC927751630007E2D01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E26D7A2D29D70AF5004C9FA5 /* GTM-WXFMVDR.json in Resources */,
+				22D18FD327751632007E2D01 /* Assets.xcassets in Resources */,
+				E21347F529E7DAAE00E38F08 /* remote_config_defaults.plist in Resources */,
+				E28BEBDD29DC4E82002EF886 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22D18FC727751630007E2D01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29F0C4229C8679300FF16A4 /* PagingView.swift in Sources */,
+				E29F0C5129C886A900FF16A4 /* FavoriteView.swift in Sources */,
+				E29F0C4F29C8867500FF16A4 /* Shopping.swift in Sources */,
+				22FF1287278357E700E995FC /* CartView.swift in Sources */,
+				E29F0C5B29C8889700FF16A4 /* ProfileModel.swift in Sources */,
+				E29F0C4829C885A400FF16A4 /* TabBarView.swift in Sources */,
+				22D18FDD27751640007E2D01 /* PaymentButton.swift in Sources */,
+				22D18FD127751630007E2D01 /* ContentView.swift in Sources */,
+				E29F0C6829C88C0400FF16A4 /* Array+Extension.swift in Sources */,
+				E29F0C6929C88C0400FF16A4 /* CustomCornerRadious.swift in Sources */,
+				22D18FE327751C25007E2D01 /* Product.swift in Sources */,
+				E29F0C6B29C9875500FF16A4 /* PaymentSuccess.swift in Sources */,
+				22FF128927835C2100E995FC /* CartManager.swift in Sources */,
+				E29F0C6129C8889700FF16A4 /* CategoryModel.swift in Sources */,
+				E29F0C4D29C8862B00FF16A4 /* ProfileView.swift in Sources */,
+				E21347F729E8100300E38F08 /* WebView.swift in Sources */,
+				E21347F329E5426000E38F08 /* for remoteconfig.swift in Sources */,
+				22FF1290278386F900E995FC /* PaymentHandler.swift in Sources */,
+				E29F0C4529C8680300FF16A4 /* Constants.swift in Sources */,
+				E29F0C6729C88C0400FF16A4 /* Color+Extension.swift in Sources */,
+				22D18FCF27751630007E2D01 /* CozyClothesApp.swift in Sources */,
+				E29F0C5F29C8889700FF16A4 /* TabBarModel.swift in Sources */,
+				22FF128D2783602400E995FC /* ProductRow.swift in Sources */,
+				22FF128B27835C9100E995FC /* CartButton.swift in Sources */,
+				E29F0C6629C88C0400FF16A4 /* UIColor+Extension.swift in Sources */,
+				22D18FE027751BFF007E2D01 /* ProductCard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		22D18FD727751632007E2D01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22D18FD827751632007E2D01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22D18FDA27751632007E2D01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CozyClothesApp/CozyClothesApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"CozyClothesApp/Preview Content\"";
+				DEVELOPMENT_TEAM = G27K723W72;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CozyClothesApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.5;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tatvic.tatvicestore;
+				PRODUCT_NAME = CozyClothesApp;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		22D18FDB27751632007E2D01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CozyClothesApp/CozyClothesApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CozyClothesApp/Preview Content\"";
+				DEVELOPMENT_TEAM = G27K723W72;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CozyClothesApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tatvic.tatvicestore;
+				PRODUCT_NAME = CozyClothesApp;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22D18FC627751630007E2D01 /* Build configuration list for PBXProject "CozyClothesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D18FD727751632007E2D01 /* Debug */,
+				22D18FD827751632007E2D01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22D18FD927751632007E2D01 /* Build configuration list for PBXNativeTarget "CozyClothesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D18FDA27751632007E2D01 /* Debug */,
+				22D18FDB27751632007E2D01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		845D0F732A7BCFCC00B75FBE /* XCRemoteSwiftPackageReference "geofire-objc" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/geofire-objc.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		84757FAF2A8E312400FFACC4 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk/";
+			requirement = {
+				kind = exactVersion;
+				version = 16.1.3;
+			};
+		};
+		E225406029C9E0B3006E0B52 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		E26D7A2829D70233004C9FA5 /* XCRemoteSwiftPackageReference "google-tag-manager-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleanalytics/google-tag-manager-ios-sdk.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		E2797E0A2A29C5AC00DBCDF7 /* XCRemoteSwiftPackageReference "mixpanel-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mixpanel/mixpanel-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		E2797E0D2A29E05800DBCDF7 /* XCRemoteSwiftPackageReference "analytics-swift-package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/smartlook/analytics-swift-package";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		E29F0C6C29C98B7C00FF16A4 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		E2A7C8B329D1A75200A2BF87 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		E2A7C8B629D1B02700A2BF87 /* XCRemoteSwiftPackageReference "ToastUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/quanshousio/ToastUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		845D0F712A7BB25C00B75FBE /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E225406029C9E0B3006E0B52 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+		845D0F742A7BCFCC00B75FBE /* GeoFire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 845D0F732A7BCFCC00B75FBE /* XCRemoteSwiftPackageReference "geofire-objc" */;
+			productName = GeoFire;
+		};
+		845D0F762A7BCFCC00B75FBE /* GeoFireUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 845D0F732A7BCFCC00B75FBE /* XCRemoteSwiftPackageReference "geofire-objc" */;
+			productName = GeoFireUtils;
+		};
+		845D0F782A7BD0D700B75FBE /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E225406029C9E0B3006E0B52 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		845D0F7A2A7BD0D700B75FBE /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E225406029C9E0B3006E0B52 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		84757FB02A8E312400FFACC4 /* FacebookAEM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84757FAF2A8E312400FFACC4 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookAEM;
+		};
+		84757FB22A8E312400FFACC4 /* FacebookBasics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84757FAF2A8E312400FFACC4 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookBasics;
+		};
+		84757FB42A8E312400FFACC4 /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84757FAF2A8E312400FFACC4 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		84757FB62A8E312400FFACC4 /* FacebookGamingServices */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84757FAF2A8E312400FFACC4 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookGamingServices;
+		};
+		84757FB82A8E312400FFACC4 /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84757FAF2A8E312400FFACC4 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+		84757FBA2A8E312400FFACC4 /* FacebookShare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84757FAF2A8E312400FFACC4 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookShare;
+		};
+		E21347EE29E4324000E38F08 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E225406029C9E0B3006E0B52 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		E21347F029E4324000E38F08 /* FirebaseRemoteConfigSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E225406029C9E0B3006E0B52 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfigSwift;
+		};
+		E225406229C9E4E5006E0B52 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E225406029C9E0B3006E0B52 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		E225406629C9E4E5006E0B52 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E225406029C9E0B3006E0B52 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		E225406E29C9E4E5006E0B52 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E225406029C9E0B3006E0B52 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		E26D7A2929D70233004C9FA5 /* GoogleTagManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E26D7A2829D70233004C9FA5 /* XCRemoteSwiftPackageReference "google-tag-manager-ios-sdk" */;
+			productName = GoogleTagManager;
+		};
+		E2797E0B2A29C5AC00DBCDF7 /* Mixpanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2797E0A2A29C5AC00DBCDF7 /* XCRemoteSwiftPackageReference "mixpanel-swift" */;
+			productName = Mixpanel;
+		};
+		E2797E0E2A29E05800DBCDF7 /* SmartlookAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2797E0D2A29E05800DBCDF7 /* XCRemoteSwiftPackageReference "analytics-swift-package" */;
+			productName = SmartlookAnalytics;
+		};
+		E29F0C6D29C98B7C00FF16A4 /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E29F0C6C29C98B7C00FF16A4 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
+		};
+		E2A7C8B429D1A75200A2BF87 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2A7C8B329D1A75200A2BF87 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
+		E2B60FB429DC05F300430540 /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E225406029C9E0B3006E0B52 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		E2B60FB629DC05F300430540 /* FirebaseInAppMessagingSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E225406029C9E0B3006E0B52 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessagingSwift-Beta";
+		};
+		E2B60FB829DC05F300430540 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E225406029C9E0B3006E0B52 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 22D18FC327751630007E2D01 /* Project object */;
+}
